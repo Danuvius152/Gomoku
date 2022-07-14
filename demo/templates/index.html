@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gomoku</title>
+	<link type="text/css" rel="stylesheet" href="../static/css/style.css">
+	<script src="../static/lib/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+	<h1>Gomoku Playground</h1>
+	<p id="rule">规则：白色方第二手可翻转场面上的黑白棋子，也可下一白子(swap2)</p>
+	<div id="butt">
+		<button class="button" onclick="change()">三手交换</button>
+		<button class="button" onclick="robotRobot()">机机</button>
+		<button class="button" onclick="initChess()">开始游戏</button>
+		<button class="button" onclick="choose_black()">Celty执黑</button>
+		<button class="button" onclick="choose_white()">Celty执白</button>
+	</div>
+	<p id="color">当前Celty执白子，点击开始游戏来挑战</p>
+	<canvas id="board" width="480px" height="480px"></canvas>
+	
+	<script src="../static/script/chess.js"></script>
+	<!-- <p id="textboard">
+
+	</p>
+	<script>
+		$.get("/action/10+10", (data, status) => {
+			console.log(data);
+			$("#textboard").text(data);
+		})
+	</script> -->
+
+</body>
+
+</html>

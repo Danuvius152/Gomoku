@@ -1,0 +1,62 @@
+body {
+    padding-top: 25px;
+    width: 100%;
+    font-family: "Microsoft soft";
+}
+
+h1 {
+    text-align: center;
+    color: #1E88C7
+}
+
+#rule {
+    text-align: center;
+}
+
+#color {
+    text-align: center;
+}
+
+#butt {
+    margin: 0 auto;
+    text-align: center;
+}
+.button{
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid #7a827a;
+}
+.button:hover {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24),0 5px 5px 0 rgba(0,0,0,0.19);
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #B9B9B9;
+    color: #fff;
+    cursor: pointer;
+}
+
+#board_table {
+    margin: 18px;
+    height: 540px;
+    width: 540px;
+    border-collapse: collapse;
+}
+
+td {
+    width: 36px;
+    height: 36px;
+    margin: 0px;
+    padding: 0px;
+}
+
+td>img {
+    position: relative;
+    left: 3px;
+    top: 3px;
+    width: 30px;
+    height: 30px;
+}
