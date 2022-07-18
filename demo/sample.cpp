@@ -655,7 +655,9 @@ std::pair<int, int> action(std::pair<int, int> loc)
         chess++;
         if (abs(x - 2) + abs(y - 2) > 10)
         {
-            next_step = Coordinate(x - 1, y - 1);
+            int a = (x + 14) % 15;
+            int b = (y + 14) % 15;
+            next_step = Coordinate(a, b);
             board[next_step.x][next_step.y] = ai_side;
             Zobrist ^= boardZobrist[next_step.x][next_step.y][ai_side];
             update_score(next_step);
@@ -663,7 +665,7 @@ std::pair<int, int> action(std::pair<int, int> loc)
 
             cerr << "My score: " << chess_score[0] << endl
                  << "Baseline score: " << chess_score[1] << endl;
-            return {x - 1, y - 1};
+            return {a, b};
         }
         else
         {
